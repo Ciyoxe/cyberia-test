@@ -54,6 +54,9 @@
     margin-bottom: 42px;
 }
 .sidebar__contact {
-    margin: 19px 0;
-    color: #9AA8BA;
+    display : block;
+    margin  : 19px 0;
+    color   : #9AA8BA;
+
+    text-decoration: none;
 }
