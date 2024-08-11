@@ -1,0 +1,19 @@
+@use './sidebar.scss';
+
+
+@font-face {
+    font-family: 'Open-Sans';
+    src: url('/fonts/OpenSans.ttf');
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/Rubik.ttf');
+}
+
+:root {
+    font-family: 'Open-Sans';
+    color: #EEF3FF;
+}
+body {
+    margin: 0;
+}

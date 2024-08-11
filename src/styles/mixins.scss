@@ -1,0 +1,10 @@
+@mixin full-size-img($url) {
+    background-image    : url($url);
+    background-size     : cover;
+    background-position : center;
+    background-repeat   : no-repeat;
+}
+@mixin flex($dir) {
+    display        : flex;
+    flex-direction : $dir;
+}

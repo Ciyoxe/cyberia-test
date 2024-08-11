@@ -1,0 +1,59 @@
+@import './mixins.scss';
+
+
+.sidebar {
+    background-color: #24252F;
+    position : fixed;
+    inset    : 0;
+    padding  : 42px 32px 0 24px;
+
+    transition: transform 0.3s ease-in-out;
+
+    &[data-closed=true] {
+        transform: translateX(100%)
+    }
+}
+
+
+.sidebar__btn-cont {
+    @include flex(row);
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+.sidebar__close-btn {
+    @include full-size-img('/icons/menuClose.svg');
+    background-color: transparent;
+    border : none;
+    width  : 32px;
+    height : 32px;
+}
+
+
+.sidebar__nav {
+    @include flex(column);
+    gap: 30px;
+}
+.sidebar__nav__link {
+    font-size: 18px;
+}
+
+
+.sidebar__delimiter {
+    background-color: #2B2D3A;
+    height: 2px;
+    margin: 47px 16px 38px 0;
+}
+
+
+.sidebar__title {
+    font-size   : 18px;
+    font-weight : normal;
+
+    color: #9AA8BA;
+    
+    margin-bottom: 42px;
+}
+.sidebar__contact {
+    margin: 19px 0;
+    color: #9AA8BA;
+}
