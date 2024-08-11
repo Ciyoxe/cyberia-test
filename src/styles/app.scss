@@ -1,4 +1,5 @@
 @use './sidebar.scss';
+@use './header.scss';
 
 
 @font-face {
@@ -9,11 +10,20 @@
     font-family: 'Rubik';
     src: url('/fonts/Rubik.ttf');
 }
+@font-face {
+    font-family: 'Fira-Sans-Condensed';
+    src: url('/fonts/FiraSansCondensed.ttf');
+}
 
 :root {
     font-family: 'Open-Sans';
+    font-size: 18px;
     color: #EEF3FF;
 }
 body {
     margin: 0;
+    background: black;
+}
+* {
+    box-sizing: border-box;
 }

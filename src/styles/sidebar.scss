@@ -3,6 +3,7 @@
 
 .sidebar {
     background-color: #24252F;
+
     position : fixed;
     inset    : 0;
     padding  : 42px 32px 0 24px;
@@ -12,17 +13,23 @@
     &[data-closed=true] {
         transform: translateX(100%)
     }
+    @include desktop {
+        display: none;
+    }
 }
 
 
 .sidebar__btn-cont {
     @include flex(row);
-    justify-content: flex-end;
+    justify-content: right;
+
     margin-bottom: 8px;
 }
 .sidebar__close-btn {
     @include full-size-img('/icons/menuClose.svg');
+    
     background-color: transparent;
+
     border : none;
     width  : 32px;
     height : 32px;
@@ -40,6 +47,7 @@
 
 .sidebar__delimiter {
     background-color: #2B2D3A;
+    
     height: 2px;
     margin: 47px 16px 38px 0;
 }
