@@ -42,7 +42,7 @@ header {
 
 .header__nav {
     @include flex(row);
-    gap: 55px;
+    gap: 60px;
 }
 
 .header__nav__link {
