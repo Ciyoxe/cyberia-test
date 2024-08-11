@@ -1,0 +1,17 @@
+.breadcrumbs {
+    color: #9AA8BA;
+
+    font-family: 'Rubik';
+    font-size: 12px;
+    
+    @include desktop {
+        font-family: 'Fira-Sans-Condensed';
+        font-size: 18px;
+    }
+}
+.breadcrumbs__link:last-of-type {
+    color: #C4D2E3;
+}
+.breadcrumbs__delimiter:last-of-type {
+    display: none;
+}
