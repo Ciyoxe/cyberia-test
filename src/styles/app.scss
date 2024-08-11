@@ -1,5 +1,23 @@
-@use './sidebar.scss';
-@use './header.scss';
+@mixin full-size-img($url) {
+    background-image    : url($url);
+    background-size     : cover;
+    background-position : center;
+    background-repeat   : no-repeat;
+}
+@mixin flex($dir) {
+    display        : flex;
+    flex-direction : $dir;
+}
+@mixin mobile {
+    @media (max-width: 750px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 750px) {
+        @content;
+    }
+}
 
 
 @font-face {
@@ -27,3 +45,7 @@ body {
 * {
     box-sizing: border-box;
 }
+
+
+@import './sidebar.scss';
+@import './header.scss';
