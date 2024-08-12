@@ -23,12 +23,8 @@ defineProps<{
         <div class="sidebar__delimiter"></div>
 
         <h3 class="sidebar__title">Контакты:</h3>
-        <a class="sidebar__contact" href="tel:+79991234567">
-            +7 999 123 45 67
-        </a>
-        <a class="sidebar__contact" href="mailto:hello@cyberia.studio">
-            hello@cyberia.studio
-        </a>
+        <a class="sidebar__contact" href="tel:+79991234567"> +7 999 123 45 67 </a>
+        <a class="sidebar__contact" href="mailto:hello@cyberia.studio"> hello@cyberia.studio </a>
         <p class="sidebar__contact">ул. Ярных, д. 35, оф. 10</p>
 
         <div class="sidebar__delimiter"></div>

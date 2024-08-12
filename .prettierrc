@@ -4,5 +4,6 @@
     "arrowParens"     : "avoid",
     "bracketSpacing"  : true,
     "singleQuote"     : true,
-    "semi"            : true
+    "semi"            : true,
+    "printWidth"      : 100
 }
