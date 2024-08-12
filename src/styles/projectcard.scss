@@ -12,7 +12,7 @@
     width: min(100%, 327px);
 
     @include desktop {
-        width: 378px;
+        width: 387px;
     
         &:not(:hover) .project-card__desc-cont {
             transform: translateY(100%);
