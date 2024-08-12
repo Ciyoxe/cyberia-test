@@ -3,7 +3,7 @@
 
     @include full-size-img(""); // image url assigned in vue component
     border-radius: 12px;
-    aspect-ratio : 0.98;
+    aspect-ratio : 1.02;
     
     overflow: hidden;
 
@@ -47,7 +47,7 @@
     font-family : 'Rubik';
     font-size   : 18px;
     
-    margin: 10px 0;
+    margin: 7px 0 6px 0;
 }
 
 .project-card__desc {
@@ -60,7 +60,7 @@
     position: absolute;
     width  : 128px;
     height : 128px;
-    top    : 21px;
+    top    : 17px;
     right  : 27px;
 
     transition: transform 0.3s ease-in-out;
