@@ -5,16 +5,16 @@ export const useProjectsStore = defineStore('projects', {
     state: () => ({
         categories: [] as Category[],
         projects: [] as Project[],
-        /** category id's */
-        filter: [] as number[],
+        /** category id */
+        filter: null as number | null,
     }),
     getters: {
         filteredProjects(state) {
-            if (state.filter.length === 0) {
+            if (state.filter === null) {
                 return state.projects;
             }
             return state.projects.filter(project =>
-                state.filter.some(categoryId => project.categories.some(c => c.id === categoryId)),
+                project.categories.some(category => category.id === state.filter),
             );
         },
     },
@@ -24,16 +24,10 @@ export const useProjectsStore = defineStore('projects', {
         },
         setCategories(categories: Category[]) {
             this.categories = categories;
-            this.filter = [];
+            this.filter = null;
         },
-        toggleCategory(categoryId: number) {
-            const index = this.filter.findIndex(id => id === categoryId);
-
-            if (index < 0) {
-                this.filter.push(categoryId);
-            } else {
-                this.filter.splice(index, 1);
-            }
+        selectCategory(categoryId: number | null) {
+            this.filter = categoryId;
         },
     },
 });
