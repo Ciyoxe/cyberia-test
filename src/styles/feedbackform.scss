@@ -81,6 +81,12 @@
     }
 }
 
+.feedback-form__checkbox {
+    @include mobile {
+        display: none;
+    }
+}
+
 .feedback-form__agreement {
     padding: 26px;
     font-size: 13px;

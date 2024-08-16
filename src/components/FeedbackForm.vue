@@ -50,7 +50,11 @@ const feedback = reactive({
             ></textarea>
         </FieldCont>
 
-        <Chechbox title="Согласие на обработку персональных данных" v-model="feedback.agreement" />
+        <Chechbox
+            class="feedback-form__checkbox"
+            title="Согласие на обработку персональных данных"
+            v-model="feedback.agreement"
+        />
 
         <button class="feedback-form__btn--desktop" type="button">Обсудить проект</button>
         <button class="feedback-form__btn--mobile" type="button">Отправить</button>

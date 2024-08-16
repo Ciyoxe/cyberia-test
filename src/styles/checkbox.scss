@@ -33,6 +33,6 @@
         box-shadow: inset 0 0 0 4px #313341;
     }
     &[data-errored=true]::before {
-        box-shadow: inset 0 0 0 4px red;
+        border: 2px solid red;
     }
 }
