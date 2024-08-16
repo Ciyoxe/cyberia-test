@@ -1,0 +1,37 @@
+.snackbar {
+    @include flex(column);
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    bottom  : 5%;
+    left    : 40px;
+    width   : min(80%, 500px);
+    height  : auto;
+    padding : 10px 5px;
+
+    border-radius: 10px;
+
+    transform: translateY(300px);
+    transition: transform 0.3s ease-in-out;
+
+    &[data-status="error"] {
+        background-color: #ff9292;
+    }
+    &[data-status="success"] {
+        background-color: #80ffd5;
+    }
+    &[data-status="info"] {
+        background-color: #81adff;
+    }
+    
+    &[data-enabled=true] {
+        transform: none;
+    }
+}
+
+.snackbar__text {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
