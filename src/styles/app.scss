@@ -9,7 +9,7 @@
     flex-direction : $dir;
 }
 @mixin mobile {
-    @media (max-width: 750px) {
+    @media (max-width: 749px) {
         @content;
     }
 }
