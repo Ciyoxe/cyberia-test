@@ -24,6 +24,7 @@ export async function getProjects(handler: Handler<{ items: Project[] }>) {
 }
 
 export type Feedback = {
+    name: string;
     phone: string;
     email: string;
     message: string;
