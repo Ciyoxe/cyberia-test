@@ -1,10 +1,14 @@
-export type Handler<TOkResult> = {
+export type Handler<TOkResult, TErrResult> = {
     fetchError?: (error: unknown) => void;
     okResponse?: (data: TOkResult) => void;
-    errResponse?: (status: number) => void;
+    errResponse?: (data: TErrResult, status: number) => void;
 };
 
-export async function sendReq<TResult>(method: string, url: string, handler: Handler<TResult>) {
+export async function sendReq<TResult, TError>(
+    method: string,
+    url: string,
+    handler: Handler<TResult, TError>,
+) {
     try {
         const response = await fetch(url, {
             method,
@@ -13,7 +17,7 @@ export async function sendReq<TResult>(method: string, url: string, handler: Han
         if (response.ok) {
             handler.okResponse?.(await response.json());
         } else {
-            handler.errResponse?.(response.status);
+            handler.errResponse?.(await response.json(), response.status);
         }
     } catch (error) {
         handler.fetchError?.(error);
