@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { reactive } from 'vue';
 import FieldCont from './FieldCont.vue';
-import Chechbox from './Chechbox.vue';
+import Checkbox from './Checkbox.vue';
 
 const feedback = reactive({
     name: '',
@@ -50,7 +50,7 @@ const feedback = reactive({
             ></textarea>
         </FieldCont>
 
-        <Chechbox
+        <Checkbox
             class="feedback-form__checkbox"
             title="Согласие на обработку персональных данных"
             v-model="feedback.agreement"
