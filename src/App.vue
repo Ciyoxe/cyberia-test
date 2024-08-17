@@ -8,7 +8,10 @@ import Footer from './components/Footer.vue';
 
 <template>
     <Header />
-    <Breadcrumbs :path="['Главная', 'Кейсы']" />
-    <FeedbackForm />
-    <Footer />
+    <div class="app__cont">
+        <Breadcrumbs :path="['Главная', 'Кейсы']" />
+        <Cases />
+        <FeedbackForm />
+        <Footer />
+    </div>
 </template>

@@ -3,10 +3,13 @@
 
     font-family: 'Rubik';
     font-size: 12px;
+
+    margin-top: 68px;
     
     @include desktop {
         font-family: 'Fira-Sans-Condensed';
         font-size: 18px;
+        margin-top: 0;
     }
 }
 .breadcrumbs__link:last-of-type {
