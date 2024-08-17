@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="footer__cont">
+        <div class="footer__content">
             <div class="footer__info">
                 <img class="footer__logo" src="/icons/cyberiaLogo.svg" />
                 Веб-разработка и усиление IT-команд

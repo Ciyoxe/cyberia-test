@@ -46,15 +46,15 @@ body {
     box-sizing: border-box;
 }
 
-#app {
+body {
     @include flex(column);
     align-items: center;
 }
 .app__cont {
-    padding: 15px;
+    padding: 25px;
 
     @include desktop {
-        max-width: 1270px;
+        max-width: 1290px;
     }
 }
 

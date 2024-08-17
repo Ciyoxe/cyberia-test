@@ -1,13 +1,12 @@
 header {
     @include flex(row);
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     background-color: #20212C;
     
     position : fixed;
     top      : 0;
-    padding  : 0 21px 0 24px;
     width    : 100%;
     height   : 68px;
 
@@ -15,13 +14,23 @@ header {
 
     @include desktop {
         background-color: transparent;
-
         position : static;
-        padding  : 0;
         height   : 165px;
     }
 }
 
+.header__content {
+    @include flex(row);
+    align-items: center;
+    justify-content: space-between;
+
+    padding : 0 21px 0 27px;
+    width   : min(100%, 1290px);
+
+    @include desktop {
+        padding: 0 0 0 25px;
+    }
+}
 
 .header__logo {
     height: 20px;

@@ -3,6 +3,7 @@ footer {
 
     @include flex(column);
     justify-content: center;
+    align-items: center;
 
     background-color: #2B2D3A;
     height: 285px;
@@ -15,16 +16,17 @@ footer {
     }
 }
 
-.footer__cont {
+.footer__content {
     @include flex(column);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 38px;
 
     @include desktop {
         flex-direction: row;
-        justify-content: space-between;
-        max-width: 780px;
+
+        width: min(100%, 1290px);
+        padding: 0 460px 0 25px;
     }
 }
 
