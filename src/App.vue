@@ -14,4 +14,5 @@ import Footer from './components/Footer.vue';
         <FeedbackForm />
     </main>
     <Footer />
+    <div class="background" />
 </template>
