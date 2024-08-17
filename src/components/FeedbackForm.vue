@@ -116,7 +116,13 @@ const acceptAndSubmitForm = () => {
 
 <template>
     <form class="feedback-form">
-        <h2 class="feedback-form__title">Расскажите о вашем проекте:</h2>
+        <div class="feedback-form__top">
+            <img class="feedback-form__icon" src="/icons/feedbackIcon.svg" />
+            <h2 class="feedback-form__title">
+                Расскажите <br />
+                о вашем проекте:
+            </h2>
+        </div>
 
         <div class="feedback-form__inputs">
             <FieldCont title="Ваше имя*" :error="validationErrors.name">

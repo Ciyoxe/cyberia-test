@@ -7,6 +7,32 @@
     }
 }
 
+.feedback-form__title {
+    margin: 0;
+
+    font-family: 'Fira-Sans-Condensed';
+    font-size: 48px;
+    font-weight: 700;
+
+    @include mobile {
+        font-family: 'Rubik';
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+.feedback-form__top {
+    @include flex(row);
+    gap: 23px;
+    align-items: center;
+}
+.feedback-form__icon {
+    width: 76px;
+
+    @include desktop {
+        display: none;
+    }
+}
+
 .feedback-form__inputs {
     @include flex(column);
     gap: 22px;
