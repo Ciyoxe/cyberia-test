@@ -28,7 +28,8 @@ header {
     width   : min(100%, 1290px);
 
     @include desktop {
-        padding: 0 0 0 25px;
+        padding: 0 410px 0 25px;
+        gap: 50px;
     }
 }
 
@@ -46,6 +47,7 @@ header {
     justify-content: center;
     flex-grow: 1;
 
+
     @include mobile {
         display: none;
     }
@@ -55,6 +57,10 @@ header {
 .header__nav {
     @include flex(row);
     gap: 60px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .header__nav__link {

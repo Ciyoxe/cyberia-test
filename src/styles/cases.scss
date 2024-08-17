@@ -1,6 +1,19 @@
-h2 {
+.cases {
+    @include flex(column);
+    align-items: center;
+
+    padding: 0 25px;
+
+    @include desktop {
+        width: min(100%, 1290px);
+    }
+}
+
+.cases__title {
+    align-self: flex-start;
+
     margin-bottom: 47px;
-    margin-top: 30px;
+    margin-top: 29px;
 
     font-family: 'Rubik';
     font-size: 21px;
@@ -20,18 +33,17 @@ h2 {
     flex-wrap  : wrap;
     row-gap    : 31px;
     column-gap : 39px;
-
     justify-content: center;
+
+    padding: 52px 0 48px 0;
 }
 
 .cases__categories {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap : 8px;
-    row-gap    : 17px;
+    gap: 8px 17px;
 
-    margin-bottom: 40px;
-
+    width: 100%;
 
     @include desktop {
         @include flex(row);
@@ -50,15 +62,21 @@ h2 {
     color: inherit;
     font-size: 12px;
 
+    box-shadow: 0 14px 61px #171b2c69;
+
     &[data-active=true] {
         background-color: #2D76F9;
     }
 
     @include desktop {
+        background-color: #313341;
+
         font-family: 'Fira-Sans-Condensed';
         font-size  : 24px;
 
         padding: 10px 29px;
         height : auto;
+
+        box-shadow: 8px 15px 29px #171b2c69;
     }
 }

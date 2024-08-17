@@ -51,10 +51,8 @@ body {
     align-items: center;
 }
 .app__cont {
-    padding: 25px;
-
     @include desktop {
-        max-width: 1290px;
+        width: min(100%, 1290px);
     }
 }
 
