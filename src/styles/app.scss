@@ -43,6 +43,7 @@ body {
 }
 * {
     box-sizing: border-box;
+    scrollbar-color: #2D76F9 #3b3e51;
 }
 
 body {
@@ -58,7 +59,6 @@ body {
     position:  fixed;
     background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
 }
-
 
 @import './snackbar.scss';
 @import './sidebar.scss';
