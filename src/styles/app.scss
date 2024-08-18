@@ -60,13 +60,13 @@ body {
     background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
 }
 
-@import './snackbar.scss';
-@import './sidebar.scss';
+@import './snackBar.scss';
+@import './sideBar.scss';
 @import './header.scss';
 @import './breadcrumbs.scss';
-@import './projectcard.scss';
+@import './projectCard.scss';
 @import './cases.scss';
 @import './checkbox.scss';
-@import './fieldcont.scss';
-@import './feedbackform.scss';
+@import './fieldCont.scss';
+@import './feedbackForm.scss';
 @import './footer.scss';
