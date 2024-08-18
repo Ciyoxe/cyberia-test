@@ -6,7 +6,7 @@
                 Веб-разработка и усиление IT-команд
             </div>
             <nav class="footer__contacts">
-                <a class="footer__contact" href="tel:+79991234567">+7 999 123 45 67</a>
+                <a class="footer__contact" href="tel:79991234567">+7 999 123 45 67</a>
                 <a class="footer__contact" href="">Агенство</a>
                 <a class="footer__contact" href="">Блог</a>
                 <a class="footer__contact" href="mailto:hello@cyberia.studio">
