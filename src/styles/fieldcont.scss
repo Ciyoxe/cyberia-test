@@ -45,6 +45,9 @@
 }
 
 .field-cont__title {
+    user-select: none;
+    pointer-events: none;
+
     font-family: 'Fira-Sans-Condensed';
     font-size: 18px;
     font-weight: 300;
