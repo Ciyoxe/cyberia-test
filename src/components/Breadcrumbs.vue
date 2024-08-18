@@ -7,7 +7,7 @@ defineProps<{
 <template>
     <nav class="breadcrumbs">
         <template v-for="page in path" :key="page">
-            <a class="breadcrumbs__link">{{ page }}</a>
+            <a class="breadcrumbs__link" href="">{{ page }}</a>
             <span class="breadcrumbs__delimiter">/</span>
         </template>
     </nav>

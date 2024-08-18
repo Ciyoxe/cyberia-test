@@ -113,9 +113,9 @@
 
     background: linear-gradient(90deg, #2B2D3A 0%, #383946 50%, #2B2D3A 100%);
     background-position: 0 0; 
-    animation: loading 1s ease-in-out infinite alternate-reverse;
+    animation: cases-loading 1s ease-in-out infinite alternate-reverse;
 
-    @keyframes loading {
+    @keyframes cases-loading {
         to {
             background-position: 100vw 0;
         }

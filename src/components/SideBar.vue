@@ -13,11 +13,11 @@ defineProps<{
             <button class="sidebar__close-btn" @click="$emit('close')"></button>
         </div>
         <nav class="sidebar__nav">
-            <a class="sidebar__nav__link">Агенство</a>
-            <a class="sidebar__nav__link">Услуги</a>
-            <a class="sidebar__nav__link">Кейсы</a>
-            <a class="sidebar__nav__link">Блог</a>
-            <a class="sidebar__nav__link">Контакты</a>
+            <a class="sidebar__nav__link" href="">Агенство</a>
+            <a class="sidebar__nav__link" href="">Услуги</a>
+            <a class="sidebar__nav__link" href="">Кейсы</a>
+            <a class="sidebar__nav__link" href="">Блог</a>
+            <a class="sidebar__nav__link" href="">Контакты</a>
         </nav>
 
         <div class="sidebar__delimiter"></div>

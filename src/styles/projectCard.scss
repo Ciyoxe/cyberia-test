@@ -100,3 +100,19 @@
     top    : 0;
     right  : 0;
 }
+
+.project-card__background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(90deg, #2B2D3A 0%, #383946 50%, #2B2D3A 100%);
+    background-position: 0 0; 
+    animation: project-card-loading 1.5s ease-in-out infinite alternate-reverse;
+
+    @keyframes project-card-loading {
+        to {
+            background-position: 1000px 0;
+        }
+    }
+}

@@ -40,22 +40,24 @@
 }
 body {
     margin: 0;
+    @include flex(column);
+    align-items: center;
 }
 * {
     box-sizing: border-box;
     scrollbar-color: #2D76F9 #3b3e51;
 }
-
-body {
-    @include flex(column);
-    align-items: center;
+a {
+    color: inherit;
+    text-decoration: none;
 }
+
 .app__cont {
     width: min(100%, 1290px);
 }
 .background {
     inset: 0;
-    z-index: -1;
+    z-index: -10;
     position:  fixed;
     background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
 }

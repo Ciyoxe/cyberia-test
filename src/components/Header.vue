@@ -10,11 +10,11 @@ const menuClosed = ref(true);
         <div class="header__content">
             <img class="header__logo" src="/icons/cyberiaLogo.svg" />
             <nav class="header__nav">
-                <a class="header__nav__link">Агенство</a>
-                <a class="header__nav__link">Услуги</a>
-                <a class="header__nav__link">Кейсы</a>
-                <a class="header__nav__link">Блог</a>
-                <a class="header__nav__link">Контакты</a>
+                <a class="header__nav__link" href="">Агенство</a>
+                <a class="header__nav__link" href="">Услуги</a>
+                <a class="header__nav__link" href="">Кейсы</a>
+                <a class="header__nav__link" href="">Блог</a>
+                <a class="header__nav__link" href="">Контакты</a>
             </nav>
             <button class="header__menu-btn" @click="menuClosed = false" />
         </div>

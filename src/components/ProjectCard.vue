@@ -17,5 +17,6 @@ defineProps<{
             <h3 class="project-card__title">{{ name }}</h3>
             <p class="project-card__desc">{{ description }}</p>
         </section>
+        <div class="project-card__background" />
     </article>
 </template>
