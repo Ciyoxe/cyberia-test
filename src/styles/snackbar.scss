@@ -1,37 +1,44 @@
 .snackbar {
-    @include flex(column);
-    align-items: center;
-    justify-content: center;
+    align-content: center;
+    text-align: center;
 
     position: fixed;
     bottom  : 5%;
     left    : 40px;
     width   : min(80%, 500px);
     height  : auto;
-    padding : 10px 5px;
+    padding : 20px 10px;
 
     border-radius: 10px;
 
     transform: translateY(300px);
     transition: transform 0.3s ease-in-out;
 
+    border: 2px solid white;
+    background-color: #2B2D3A;
+
+    @include desktop {
+        padding: 50px 30px;
+    }
     &[data-status="error"] {
-        background-color: #ff9292;
+        border-color: #ff0000;
+        color: #ffc2c2;
     }
     &[data-status="success"] {
-        background-color: #80ffd5;
+        border-color: #00ff00;
+        color: #c3ffd5;
     }
     &[data-status="info"] {
-        background-color: #81adff;
+        border-color: #0000ff;
+        color: #c1c0ff;
     }
-    
+
     &[data-enabled=true] {
         transform: none;
     }
 }
 
 .snackbar__text {
-    color: black;
     font-size: 20px;
     text-align: center;
 }
