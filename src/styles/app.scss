@@ -33,6 +33,7 @@
     src: url('/fonts/FiraSansCondensed.ttf');
 }
 
+
 :root {
     font-family: 'Open-Sans';
     font-size: 18px;
@@ -52,15 +53,17 @@ a {
     text-decoration: none;
 }
 
+
 .app__cont {
     width: min(100%, 1290px);
 }
-.background {
+.app__background {
     inset: 0;
     z-index: -10;
     position:  fixed;
     background: linear-gradient(180deg, #24252F 0%, #31313F 36.46%, #242530 100%);
 }
+
 
 @import './snackBar.scss';
 @import './sideBar.scss';
