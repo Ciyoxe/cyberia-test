@@ -50,9 +50,7 @@ body {
     align-items: center;
 }
 .app__cont {
-    @include desktop {
-        width: min(100%, 1290px);
-    }
+    width: min(100%, 1290px);
 }
 .background {
     inset: 0;
