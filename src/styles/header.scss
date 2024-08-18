@@ -65,7 +65,27 @@ header {
 
 .header__nav__link {
     font-family: 'Fira-Sans-Condensed';
-    color: white
+    color: white;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+        border-bottom: 2px solid white;
+        
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &:hover::before {
+        transform: none;
+    }
 }
 
 .header__menu-btn {

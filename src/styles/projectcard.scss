@@ -8,8 +8,11 @@
     overflow: hidden;
 
     color: white;
-    
+    outline: 2px solid transparent;
+
     width: min(100%, 327px);
+
+    transition: outline 0.3s ease-in-out;
 
     @include desktop {
         width: 387px;
@@ -19,6 +22,9 @@
         }
         &:hover .project-card__sign {
             transform: translateY(-150px);
+        }
+        &:hover {
+            outline: 2px solid #2D76F9;
         }
     }
 }

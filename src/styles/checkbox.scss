@@ -1,4 +1,7 @@
 .checkbox__label {
+    cursor: pointer;
+    user-select: none;
+
     font-family: 'Fira-Sans-Condensed';
     font-size: 18px;
     font-weight: 300;
@@ -17,6 +20,8 @@
     outline: none;
 
     &::before {
+        cursor: pointer;
+
         content: '';
         display: block;
         width: 23px;

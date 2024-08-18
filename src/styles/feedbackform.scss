@@ -117,8 +117,14 @@
 
     margin-top: 26px;
 
+    transition: box-shadow 0.3s ease-in-out;
+
     @include mobile {
         display: none;
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px 0 #2974ff;
     }
 }
 
