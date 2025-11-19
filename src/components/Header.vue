@@ -1,8 +1,29 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch, onBeforeUnmount } from 'vue';
 import SideBar from './SideBar.vue';
 
 const menuClosed = ref(true);
+
+const toggleBodyScroll = (locked: boolean) => {
+    const className = 'no-scroll';
+    if (locked) {
+        document.body.classList.add(className);
+    } else {
+        document.body.classList.remove(className);
+    }
+};
+
+watch(
+    menuClosed,
+    closed => {
+        toggleBodyScroll(!closed);
+    },
+    { immediate: true },
+);
+
+onBeforeUnmount(() => {
+    toggleBodyScroll(false);
+});
 </script>
 
 <template>

@@ -44,6 +44,9 @@ body {
     @include flex(column);
     align-items: center;
 }
+.no-scroll {
+    overflow: hidden;
+}
 * {
     box-sizing: border-box;
     scrollbar-color: #2D76F9 #3b3e51;
